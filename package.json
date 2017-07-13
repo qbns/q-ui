@@ -4,10 +4,12 @@
   "description": "No description",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
+    "buildAndAnalyzeBundle": "npm run clean && cross-env ANALYZE=true npm run build",
     "clean": "rimraf dist",
     "lint": "eslint src",
     "start": "webpack-dev-server",
+    "startAndAnalyzeBundle": "cross-env ANALYZE=true npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +20,12 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/qbns/q-ui#readme",
   "dependencies": {
+    "i18next": "^8.4.3",
+    "i18next-browser-languagedetector": "^2.0.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-i18next": "^4.6.4",
     "react-redux": "^5.0.5",
     "redux": "^3.7.1"
   },

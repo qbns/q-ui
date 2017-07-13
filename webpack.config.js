@@ -14,7 +14,7 @@ const webpackConfig = {
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /\.(jsx|js)?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
@@ -37,7 +37,7 @@ const webpackConfig = {
   },
 };
 
-if (__DEV__) {
+if (process.env.ANALYZE) {
   webpackConfig.plugins.push(new BundleAnalyzerPlugin());
 }
 

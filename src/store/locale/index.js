@@ -1,3 +1,5 @@
+import i18next from 'i18next';
+
 export const SET_LOCALE = 'locale/set-locale';
 
 const initialState = {
@@ -5,13 +7,15 @@ const initialState = {
 };
 
 export function setLocale(locale) {
+  i18next.setLng(locale);
   return { type: SET_LOCALE, locale };
 }
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case SET_LOCALE:
-      return { language: action.payload };
+      console.log(action);
+      return { language: action.locale };
     default:
       return state;
   }
