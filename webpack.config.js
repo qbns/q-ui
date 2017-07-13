@@ -1,10 +1,15 @@
+const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-module.exports = {
+const env = JSON.stringify(process.env.NODE_ENV) || 'development';
+const __DEV__ = env === 'development';
+
+const webpackConfig = {
   entry: './src/index.jsx',
   output: {
     path: `${__dirname}/dist`,
-    filename: 'bundle.js',
+    filename: '[chunkhash].bundle.js',
   },
   module: {
     loaders: [
@@ -22,8 +27,18 @@ module.exports = {
     title: 'App',
     template: 'src/index.html', // Load a custom template
     inject: 'body', // Inject all scripts into the body
-  })],
+  }),
+  new webpack.DefinePlugin({
+    APP_DEFAULT_LOCALE: JSON.stringify(process.env.LOCALE) || '\'pl\'',
+  }),
+  ],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
 };
+
+if (__DEV__) {
+  webpackConfig.plugins.push(new BundleAnalyzerPlugin());
+}
+
+module.exports = webpackConfig;
