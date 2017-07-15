@@ -4,5 +4,5 @@ import reducers from './reducers';
 export default createStore(
   reducers,
   {},
-  window.devToolsExtension ? window.devToolsExtension() : f => f,
+  window.devToolsExtension && APP_DEV ? window.devToolsExtension() : f => f,
 );

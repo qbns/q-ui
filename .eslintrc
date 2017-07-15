@@ -4,6 +4,7 @@
     "browser": true
   },
   "globals": {
-    "APP_DEFAULT_LOCALE": false
+    "APP_DEFAULT_LOCALE": false,
+    "APP_DEV": false,
   }
 }
