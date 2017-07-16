@@ -25,7 +25,7 @@ clients.
 * TODO: Build variants dependent on target device - very often mobile
  and desktop versions differ in functionality and it's better to have
  different builds for desktop and mobile - usually the mobile
- bundle could be significantly smaller which improves rendering time.
+ bundle could be significantly smaller to improve rendering time and network transfer.
 
 ## Running the project ##
 Run `npm install` to install all dependencies
