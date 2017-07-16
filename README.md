@@ -8,11 +8,12 @@ and [SASS](https://github.com/sass/sass) for styling.
 
 ## The goal ##
 
-I have created this project in order to have a starting point for my apps. It always requires some time to setup all the
+I have created this project in order to have a solid starting point for my apps.
+It saves me the time required for setting up 
 boilerplate for supporting some basic features (i18n, branding, specialized build
 variants for mobile/desktop packages) that are typically not present
-in any other React starter project. I am very fond of UIKit framework
-which I prefer for creating visual components.
+in any other React starter project. The project is dependent on the
+UIKit framework which I prefer for creating visual components.
 
 ## Features ##
 * Support for i18n (with [i18next](https://github.com/i18next/i18next)
