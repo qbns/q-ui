@@ -11,7 +11,6 @@ const App = ({ t, children }) => (
     </div>
     { children }
   </Container>
-
 );
 
 App.propTypes = {

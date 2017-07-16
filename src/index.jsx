@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import { I18nextProvider } from 'react-i18next';
 import UIKit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
-import createHistory from 'history/createBrowserHistory';
+import createHistory from 'history/createHashHistory';
 import i18n from './service/i18n';
 import store from './store/createStore';
 import getRoutes from './routes';
