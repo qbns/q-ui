@@ -13,6 +13,6 @@ export default i18n
 
     ns: ['common'],
     defaultNS: 'common',
-    debug: true,
+    debug: APP_DEV,
     resources: { pl, en },
   });
