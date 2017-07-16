@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:default",
-    "build:non-existent-brand": "npm run clean && cross-env NODE_ENV=production cross-env BRAND=xxxxxx webpack -p",
     "build:default": "npm run clean && cross-env NODE_ENV=production cross-env BRAND=default webpack -p",
     "buildAndAnalyzeBundle": "npm run clean && cross-env ANALYZE=true npm run build",
     "clean": "rimraf dist",
     "lint": "eslint src",
-    "start": "webpack-dev-server",
+    "start": "npm run start:default",
+    "start:default": "cross-env BRAND=default webpack-dev-server",
     "startAndAnalyzeBundle": "cross-env ANALYZE=true npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
