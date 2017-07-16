@@ -18,9 +18,8 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/qbns/q-ui.git"
   },
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/qbns/q-ui#readme",
+  "author": "Jakub Malec",
+  "license": "MIT",
   "dependencies": {
     "history": "^4.6.3",
     "i18next": "8.4.3",

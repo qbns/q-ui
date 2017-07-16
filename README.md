@@ -8,8 +8,7 @@ and [SASS](https://github.com/sass/sass) for styling.
 
 ## The goal ##
 
-I have created this project in order to have a starting point for most of
-the apps I create. It always requires some time to setup all the
+I have created this project in order to have a starting point for my apps. It always requires some time to setup all the
 boilerplate for supporting some basic features (i18n, branding, specialized build
 variants for mobile/desktop packages) that are typically not present
 in any other React starter project. I am very fond of UIKit framework
@@ -67,3 +66,6 @@ If you want to determine which content is brand-specific.
 
 ## Contributing ##
 PRs and suggestions are all welcome :D
+
+## License ##
+MIT
