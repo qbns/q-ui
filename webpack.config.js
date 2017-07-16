@@ -36,6 +36,9 @@ const webpackConfig = {
               presets: ['es2015', 'react'],
             },
           },
+          {
+            loader: 'eslint-loader',
+          },
         ],
         include: [path.join(__dirname, 'src')],
       },

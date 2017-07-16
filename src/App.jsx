@@ -21,6 +21,6 @@ App.propTypes = {
 
 App.defaultProps = {
   children: null,
-}
+};
 
 export default translate()(App);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { ConnectedRouter }  from 'react-router-redux';
+import { ConnectedRouter } from 'react-router-redux';
 import { I18nextProvider } from 'react-i18next';
 import UIKit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
