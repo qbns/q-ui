@@ -22,10 +22,11 @@ and [react-i18next](https://github.com/i18next/react-i18next))
 to determine which set
 of styles is going to be built - nice when you create similar apps for different
 clients.
-* TODO: Build variants dependent on target device - very often mobile
+* Build variants dependent on target device - very often mobile
  and desktop versions differ in functionality and it's better to have
  different builds for desktop and mobile - usually the mobile
- bundle could be significantly smaller to improve rendering time and network transfer.
+ bundle could be significantly smaller to improve rendering time and use
+ less network transfer.
 
 ## Running the project ##
 Run `npm install` to install all dependencies
@@ -62,8 +63,12 @@ variables for your new brand:
 @import "./new_brand/variables";
 /* @endif */
 ```
-* Use preprocessor conditions in any js, jsx, scss, html file
-If you want to determine which content is brand-specific.
+* Use [preprocess](https://github.com/jsoverson/preprocess) conditions in any js,
+jsx, scss file inside _src_ directory if you want to insert brand-specific content.
+* To build/run _new_brand_ of your project set BRAND config value to _new_brand_ in .npmrc
+
+## Desktop and mobile variants ##
+TODO: readme
 
 ## Contributing ##
 PRs and suggestions are all welcome :D
