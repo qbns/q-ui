@@ -20,7 +20,7 @@ UIKit framework which I prefer for creating visual components.
 and [react-i18next](https://github.com/i18next/react-i18next))
 * Support for branded builds - using [preprocess](https://github.com/jsoverson/preprocess)
 to determine which set
-of styles is going to be built - nice when you create similar apps for different
+of styles is going to be built and to enable/disable features for specific brand - nice when you create similar apps for different
 clients.
 * Build variants dependent on target device - very often mobile
  and desktop versions differ in functionality and it's better to have
