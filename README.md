@@ -16,7 +16,7 @@ in any other React starter project. The project is dependent on the
 UIKit framework which I prefer for creating visual components.
 
 ## Features ##
-* Support for i18n (with [i18next](https://github.com/i18next/i18next)
+* Support for i18n (with [i18next](https://github.com/i18next/i18next), with ability to switch on the fly.
 and [react-i18next](https://github.com/i18next/react-i18next))
 * Support for branded builds - using [preprocess](https://github.com/jsoverson/preprocess)
 to determine which set
